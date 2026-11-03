@@ -1,0 +1,22 @@
+---
+import styles from "../../styles/components/Header.module.css";
+---
+
+<header class={styles.header}>
+    <a href="/" class={styles.logo} aria-label="NODO Arquitectura - Inicio">
+        BAUREL<span>.</span>
+    </a>
+
+    <nav class={styles.navigation} aria-label="Navegación principal">
+        <ul class={styles.navigationList}>
+            <li><a href="#estudio">Estudio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <a href="#contacto" class={styles.contactLink}>
+        Hablemos <span aria-hidden="true">↗</span>
+    </a>
+</header>

@@ -1,0 +1,48 @@
+---
+import styles from "../../styles/components/Hero.module.css";
+---
+
+<section class={styles.hero}>
+    <div class={styles.intro}>
+        <div class={styles.heading}>
+            <span class={styles.eyebrow}>BAUREL ARQUITECTURA — EST. 2024</span>
+
+            <h1>
+                Arquitectura <br />
+                con <em>propósito.</em>
+            </h1>
+        </div>
+
+        <div class={styles.description}>
+            <p>
+                Diseñamos espacios que conectan arquitectura, naturaleza y las
+                formas de habitar de cada persona.
+            </p>
+
+            <a href="#proyectos" class={styles.cta}>
+                Explorar proyectos <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </div>
+
+    <div class={styles.gallery}>
+        <figure class={styles.mainImage}>
+            <img
+                src="/images/hero-main.jpg"
+                alt="Residencia contemporánea integrada con su entorno natural"
+            />
+        </figure>
+
+        <figure class={styles.secondaryImage}>
+            <img
+                src="/images/hero-detail.jpg"
+                alt="Detalle arquitectónico de materiales naturales y luz"
+            />
+        </figure>
+    </div>
+
+    <div class={styles.footer}>
+        <span>ARQUITECTURA · INTERIORES · DISEÑO</span>
+        <span>01 — 04</span>
+    </div>
+</section>

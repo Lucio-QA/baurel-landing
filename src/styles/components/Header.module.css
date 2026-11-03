@@ -1,0 +1,81 @@
+.header {
+    width: 100%;
+    min-height: 88px;
+    padding: 0 var(--container-padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-ivory);
+    border-bottom: 1px solid rgba(41, 40, 36, 0.12);
+}
+
+/* Logo */
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    color: var(--color-charcoal);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--color-stone);
+}
+
+/* Navegación */
+
+.navigationList {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navigationList a {
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color 200ms ease;
+}
+
+.navigationList a:hover {
+    color: var(--color-stone);
+}
+
+/* Contacto */
+
+.contactLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 0.9rem 1.25rem;
+
+    background-color: var(--color-charcoal);
+    color: var(--color-ivory);
+
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background-color 200ms ease;
+}
+
+.contactLink:hover {
+    background-color: var(--color-stone);
+}

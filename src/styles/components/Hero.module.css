@@ -1,0 +1,161 @@
+.hero {
+    padding: 5rem var(--container-padding) 2rem;
+    background-color: var(--color-ivory);
+}
+
+/* Introducción */
+
+.intro {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    align-items: end;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.eyebrow {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    color: var(--color-stone);
+}
+
+.heading h1 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: var(--color-charcoal);
+}
+
+.heading h1 em {
+    font-weight: 400;
+}
+
+.description {
+    max-width: 350px;
+    padding-bottom: 0.5rem;
+}
+
+.description p {
+    margin-bottom: 2rem;
+
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-stone);
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-charcoal);
+
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--color-charcoal);
+}
+
+/* Galería */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1.65fr 1fr;
+    align-items: end;
+    gap: 1.5rem;
+}
+
+.gallery figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.mainImage {
+    height: 520px;
+}
+
+.secondaryImage {
+    height: 380px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Pie */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(41, 40, 36, 0.15);
+
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    color: var(--color-stone);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 3rem;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .heading h1 {
+        font-size: clamp(3.5rem, 13vw, 6rem);
+    }
+
+    .description {
+        max-width: 450px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 0.7fr;
+        gap: 0.75rem;
+    }
+
+    .mainImage {
+        height: 350px;
+    }
+
+    .secondaryImage {
+        height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .mainImage {
+        height: 320px;
+    }
+
+    .secondaryImage {
+        height: 220px;
+    }
+}
