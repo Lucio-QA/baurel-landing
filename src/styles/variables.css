@@ -1,0 +1,56 @@
+:root {
+
+    /* COLORS */
+
+    --color-sand: #eae4d9;
+    --color-ivory: #f8f7f3;
+    --color-charcoal: #292824;
+    --color-stone: #a69b89;
+
+    --color-background: var(--color-ivory);
+    --color-text: var(--color-charcoal);
+    --color-text-secondary: var(--color-stone);
+
+
+    /* TYPOGRAPHY */
+
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "Inter", sans-serif;
+
+
+    /* FONT SIZES */
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 2rem;
+    --text-3xl: 3rem;
+    --text-4xl: 4rem;
+
+    /* SPACING */
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
+
+    /* LAYOUT */
+
+    --container-width: 1200px;
+    --container-padding: 1.5rem;
+
+    /* BORDERS */
+
+    --border-color: #ded8ce;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+
+    /* TRANSITIONS */
+
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+}
